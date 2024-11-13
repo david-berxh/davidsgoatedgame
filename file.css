@@ -1,0 +1,95 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+background: url("./spiderman\ background.jpg");
+background-size: cover;
+}
+
+#board {
+    width: 600px;
+    height: 600px;
+   /* background-color: blue;*/
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("./blue\ red\ grid.jpg");
+    background-size: cover;
+    border: 10px solid black;
+    border-radius: 25px;
+}
+
+#board div{
+    height: 200px;
+    width:  200px; 
+    background: url("./portal.png");
+    background-size: cover; 
+    display: flex;
+    flex-wrap: flex;
+    border-radius: 10px;
+   
+} 
+
+#board div img{
+        width: 150x; 
+        height: 150px; 
+        margin: 0 auto;
+        user-select: none;
+        -webkit-user-drag: none;
+        pointer-events: none;
+         -moz-user-select: none;  
+         -webkit-user-select: none; 
+         -ms-user-select: none;
+    }
+
+    .startButton{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: white;
+        border: none;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        border: solid black 3px;
+    }
+
+    .Retry {
+            margin: 20px auto; 
+            display: block; 
+            width: 150px;
+            height: 50px; 
+            background-color: red;
+            color: white;
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            border: solid black 3px;
+            ;
+    }
+
+    .Retry:hover{
+        background-color: darkred;
+    }
+
+    .highScore {
+        font-size: 30px;
+    }
+
+  #lives{
+   display: flex;
+   justify-content: center;
+   margin: 20px 0px;
+  }
+
+  .heart {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background: url("./heart.png.png") no-repeat center center;
+    background-size: contain; 
+    transform: translate(10%);
+  }
